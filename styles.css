@@ -830,37 +830,83 @@ body{
 }
 @media (max-width: 900px) {
   .header {
-    height: auto;
-    padding: 12px 0;
+    height: auto !important;
+    padding: 10px 0 !important;
   }
+
   .header__inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    padding: 0 16px !important;
   }
-  .nav {
-    flex-direction: column;
-    gap: 8px;
-    margin-left: 0;
-    width: 100%;
-  }
-  .nav__pill {
-    width: 100%;
-    min-width: unset;
-    height: 44px;
-    font-size: 16px;
-    padding: 0 12px;
-    justify-content: flex-start;
-  }
-  .header__actions {
-    margin-left: 0;
-    gap: 8px;
-  }
+
   .logo {
-    width: 48px;
-    height: 48px;
+    width: 50px !important;
+    height: 50px !important;
+    align-self: flex-start !important;
+  }
+
+  .header__actions {
+    position: absolute !important;
+    top: 10px !important;
+    right: 16px !important;
+    margin-left: 0 !important;
+    gap: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .icon-btn,
+  .icon-btn1 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .icon-btn img {
+    width: 150% !important;
+    height: 150% !important;
+  }
+
+  .icon-btn1 img {
+    width: 180% !important;
+    height: 180% !important;
+  }
+
+  .lang-switch {
+    width: 80px !important;
+    height: 36px !important;
+    margin-left: 8px !important;
+  }
+
+  .lang-switch__btn {
+    font-size: 13px !important;
+    padding: 0 8px !important;
+  }
+
+  .nav {
+    flex-direction: row !important;
+    gap: 8px !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+    margin-top: 8px !important;
+  }
+
+  .nav__pill {
+    width: auto !important;
+    min-width: 70px !important;
+    height: 40px !important;
+    font-size: 13px !important;
+    padding: 0 10px !important;
+    justify-content: center !important;
+    border-radius: 20px !important;
+    flex: 1 !important;
+    max-width: 85px !important;
+    text-align: center !important;
   }
 }
+
 
 @media (max-width: 900px) {
   .hero__card {
